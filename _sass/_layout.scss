@@ -44,7 +44,7 @@
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
-        right: 30px;
+        right: 15px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
@@ -233,4 +233,31 @@
             font-size: 18px;
         }
     }
+
+    img {
+        border: 1px solid $grey-color-dark;
+        padding: 1px;
+        display: block;
+        margin: auto;
+        margin-bottom: $spacing-unit / 2;
+        width: 345px;
+    }
+
+    .left {
+        float: left;
+        margin-right: $spacing-unit / 2;
+    }
+
+    .right {
+        float: right;
+        margin-left: $spacing-unit / 2;
+    }
+
+    @include media-query($on-palm) {
+      img {
+        width: 100%;
+      }
+    }
 }
+
+
