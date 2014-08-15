@@ -7,8 +7,22 @@
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>
+            <a href="mailto:{{ site.email }}">
+              <span class="icon icon--email">
+                <svg viewBox="0 0 16 16">
+                  <g>
+                    <path fill="#828282" d="M7,7L5.268,5.484L0.316,9.729C0.496,9.896,0.739,10,1.007,10h11.986c0.267,0,0.509-0.104,0.688-0.271L8.732,5.484L7,7z"/>
+                    <path fill="#828282" d="M13.684,0.271C13.504,0.103,13.262,0,12.993,0H1.007C0.74,0,0.498,0.104,0.318,0.273L7,6L13.684,0.271z"/>
+                    <polygon fill="#828282" points="0,0.878 0,9.186 4.833,5.079 	"/>
+                    <polygon fill="#828282" points="9.167,5.079 14,9.186 14,0.875 	"/>
+                  </g>
+                </svg>
+              </span>
+
+              <span class="username">{{ site.email }}</span>
+            </a>
+          </li>
         </ul>
       </div>
 
