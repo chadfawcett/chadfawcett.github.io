@@ -1,30 +1,30 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chad Fawcett</title>
 
-<div class="home">
+    <style>
+      body {
+        background-color: #1abc9c;
+        text-align: center;
+        margin-top: 15%;
+        font-family: arial;
+        color: #ffffff;
+      }
 
-  <h1 class="page-heading">Posts</h1>
+      #mugshot {
+        width: 50%;
+        min-width: 250px;
+        max-width: 350px;
+      }
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y - %I:%M:%S %p" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
-
-
-
-
-
-
+      h1 {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="mugshot" src="images/mugshot.png" alt="Chad Fawcett" />
+    <h1>Chad Fawcett</h1>
+  </body>
+</html>
