@@ -1,40 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Chad Fawcett</title>
+---
+layout: default
+---
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<div class="home">
 
-    <link rel="icon" href="images/favico.png" type="image/png">
+  <div class="posts">
+    {% for post in paginator.posts %}
+      <div class="post">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <h3 class="h2 post-title">{{ post.title }}</h3>
+          <p class="post-summary">{{ post.summary }}</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
 
-    <style>
-      body {
-        background-color: #1abc9c;
-        text-align: center;
-        margin-top: 10%;
-        font-family: arial;
-        color: #ffffff;
-      }
-
-      #mugshot {
-        width: 40%;
-        min-width: 250px;
-        max-width: 350px;
-      }
-
-      h1 {
-        font-size: 56px;
-      }
-
-      @media (max-width: 390px) {
-        h1 {
-          font-size: 46px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <img id="mugshot" src="images/mugshot.png" alt="Chad Fawcett" />
-    <h1>Chad Fawcett</h1>
-  </body>
-</html>
+  {% include pagination.html %}
+</div>
