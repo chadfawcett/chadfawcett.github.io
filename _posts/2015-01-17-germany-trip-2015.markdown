@@ -8,4 +8,4 @@ categories: travel
 
 Welcome!
 
-I have wanted to set up a blog for awhile now as I would like to document projects I am working on. I'm a software developer but my projects won't be limited to those types of things. I am also heading to Berlin in less than a month to work on my German language skills and do some online schooling while I'm there. Ultimately, the trip was the reason why I finally set up this blog. I want to keep track of some of the finer moments to have something to look back at in the end.
+I have wanted to set up a blog for awhile now as I would like to document projects I am working on. I'm a software developer but my projects won't be limited to those types of things. I am also heading to Berlin tomorrow to work on my German language skills and do some online schooling while I'm there. Ultimately, the trip was the reason why I finally set up this blog. I want to keep track of some of the finer moments to have something to look back at in the end.
