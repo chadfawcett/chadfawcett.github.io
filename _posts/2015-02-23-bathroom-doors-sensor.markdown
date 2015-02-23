@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Bathroom Doors Sensor
-date:       2015-02-21 17:15:00
+date:       2015-02-23 17:15:00
 summary:    At work, there are only two bathrooms with approximately 40 people in the building. It seems whenever anyone gets up from their desks and walks over to the bathroom, they are always in use. The solution was simple, build a door monitoring system that integrated with our chat application.
 categories: raspberrypi node express
 ---
