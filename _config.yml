@@ -37,5 +37,4 @@ permalink:    pretty
 paginate:     3
 sass:
   compressed: true
-gems:
-  - jekyll-sitemap
+gems: ['jekyll-sitemap', 'jekyll-paginate']
