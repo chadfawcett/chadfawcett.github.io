@@ -1,0 +1,5 @@
+baseURL: http://chadf.ca
+languageCode: en-us
+title: Chad Fawcet
+theme: arabica
+paginate: 100
