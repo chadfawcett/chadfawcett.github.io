@@ -3,6 +3,9 @@ html, body {
   color: #3F3F3F;
   font-weight: 300;
   font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #FCFCFC;
 }
 
 @import "header";
+@import "oss";
+@import "footer";

@@ -6,6 +6,16 @@ description: "A personal blog about my projects and traveling expeditions."
 baseurl:     ""
 url:         "http://chadf.ca"
 
+# collections
+collections:
+  oss_contributions:
+    order:
+      - storybook.md
+      - gatsby.md
+      - tickbin.md
+      - facebook.md
+      - bcgov.md
+
 # Google analytics
 google_analytics:
 

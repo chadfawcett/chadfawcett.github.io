@@ -1,0 +1,14 @@
+<section id="oss" class="oss">
+  <h1>Open Source Contributions</h1>
+  <p>
+    I’m a strong believer in Open Source. These are some of the organizations I am proud to have contributed to. Click each organization to see the individual contributions.
+  </p>
+
+  <div class="oss__contributions">
+    {% for contribution in site.oss_contributions %}
+      <a href="{{ contribution.link }}">
+        <img src="{{ contribution.image }}" alt="{{ contribution.organization_name }}" />
+      </a>
+    {% endfor %}
+  </div>
+</section>
