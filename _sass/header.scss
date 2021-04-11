@@ -1,32 +1,42 @@
-html, body {
-  margin: 0;
-  color: #3F3F3F;
-  font-weight: 300;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
 .header {
   display: grid;
+  gap: 0 100px;
+  padding: 110px 0;
   background-color: #F0F0F0;
-  height: 100vh;
+  grid-template-columns: auto 420px 420px auto;
+  grid-template-areas: 
+    ". titles profile-image ."
+    ". social profile-image .";
 }
-.header__title {
-  font-weight: 300;
-  font-size: 60px;
-  line-height: 73px;
-  letter-spacing: 0.05em;
-}
-.header__subtitle {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
 
-  color: rgba(63, 63, 63, 0.6);
+.header__titles{
+  grid-area: titles;
+  text-align: right;
+  align-self: end;
+
+  h1 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 73px;
+    letter-spacing: 0.05em;
+    margin: 0;
+    color: #3f3f3f;
+  }
+  
+  h2 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+  
+    color: rgba(63, 63, 63, 0.6);
+  }
 }
 
 .header__profile-image {
+  grid-area: profile-image;
   display: block;
-  background-image: url('/images/chad.jpg');
+  background-image: url('/assets/images/chad.jpg');
   background-size: 332px;
   background-position: center;
   border-radius: 50%;
@@ -36,6 +46,23 @@ html, body {
   width: 332px;
   height: 332px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 0px 40px rgba(0, 0, 0, 0.25);
+}
+
+.header__social-list {
+  grid-area: social;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  list-style: none;
+  
+  li {
+    margin: 0 10px;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .header {
