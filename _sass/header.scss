@@ -1,12 +1,12 @@
 .header {
   display: grid;
+  justify-content: center;
   gap: 0 100px;
-  padding: 150px 0;
+  padding: 150px 20px;
   background-color: #F0F0F0;
-  grid-template-columns: auto 420px 420px auto;
   grid-template-areas: 
-    ". titles profile-image ."
-    ". social profile-image .";
+    "titles profile-image"
+    "social profile-image";
 }
 
 .header__titles{
@@ -17,7 +17,6 @@
   h1 {
     font-weight: 300;
     font-size: 60px;
-    line-height: 73px;
     letter-spacing: 0.05em;
     margin: 0;
   }
@@ -36,12 +35,12 @@
   grid-area: profile-image;
   display: block;
   background-image: url('/assets/images/chad.jpg');
-  background-size: 332px;
+  background-size: 100%;
   background-position: center;
   border-radius: 50%;
   border-style: solid;
   border-color: #FAFAFA;
-  border-width: 10px !important;
+  border-width: 10px;
   width: 332px;
   height: 332px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25), 0px 0px 40px rgba(0, 0, 0, 0.25);
@@ -53,6 +52,7 @@
   justify-self: center;
   display: flex;
   list-style: none;
+  padding: 0;
   
   li {
     margin: 0 10px;
@@ -60,6 +60,56 @@
 
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    gap: 0 60px;
+  }
+
+  .header__titles {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .header__profile-image {
+    width: 260px;
+    height: 260px;
+    border-width: 8px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    grid-template-areas:
+      "profile-image"
+      "titles"
+      "social";
+    justify-content: center;
+    justify-items: center;
+    gap: 20px 0;
+    padding: 50px 0;
+  }
+
+  .header__profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .header__titles {
+    text-align: center;
+
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 18px;
     }
   }
 }
