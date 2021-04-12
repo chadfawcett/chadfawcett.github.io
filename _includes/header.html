@@ -1,14 +1,22 @@
-<header class="site-header px2 px-responsive">
-  <div class="mt2 wrap">
-    <div class="measure">
-      <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
-      <nav class="site-nav right">
-        {% include navigation.html %}
-      </nav>
-      <div class="clearfix"></div>
-      {% if site.show_social_icons %}
-        {% include social_links.html %}
-      {% endif %}
-    </div>
+<header id="header" class="header">
+  <div class="header__titles">
+    <h1>Chad Fawcett</h1>
+    <h2>full stack software developer</h2>
   </div>
+  <div class="header__profile-image"></div>
+
+  <ul class="header__social-list">
+    <li><a href="https://www.instagram.com/{{ site.instagram_username }}/">
+      <img src="/assets/images/instagram-brands.svg" alt="instagram">
+    </a></li>
+    <li><a href="https://github.com/{{ site.github_username }}">
+      <img src="/assets/images/github-brands.svg" alt="github">
+    </a></li>
+    <li><a href="https://twitter.com/{{ site.twitter_username }}">
+      <img src="/assets/images/twitter-brands.svg" alt="twitter">
+    </a></li>
+    <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">
+      <img src="/assets/images/linkedin-in-brands.svg" alt="linkedin">
+    </a></li>
+  </ul>
 </header>
