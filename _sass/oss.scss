@@ -1,7 +1,7 @@
 .oss {
   max-width: 900px;
   margin: auto;
-  padding: 150px;
+  padding: 100px;
 
   h1 {
     font-weight: 300;
@@ -16,16 +16,44 @@
 
 .oss__contributions {
   display: flex;
-  justify-content: space-around;
-  margin: 75px 0;
+  justify-content: center;
+  margin: 50px 0 0 0;
 
   a {
     text-decoration: none;
+    margin: 20px;
   }
 
   img {
     width: 100px;
     border-radius: 50%;;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .oss {
+    padding: 40px;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .oss__contributions {
+    margin: 50px 0 0 0;
+    flex-wrap: wrap;
+
+    a {
+      margin: 20px 10px;
+    }
+
+    img {
+      width: 75px;
+    }
   }
 }
